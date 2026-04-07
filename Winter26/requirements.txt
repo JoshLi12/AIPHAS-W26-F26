@@ -1,0 +1,19 @@
+pandas>=2.0.0
+torch>=2.0.0
+sentence-transformers>=2.2.0
+
+# --- Ollama (not installed via pip; required for translation + Tier 2 LLM) ---
+#
+# Install the Ollama app / CLI:
+#   macOS:   brew install ollama
+#            or download from https://ollama.com/download
+#
+# Start the server (if it is not already running as a service):
+#   ollama serve
+#
+# Pull a chat model (default in code is llama3.2; override with --ollama-model or OLLAMA_MODEL):
+#   ollama pull llama3.2
+#
+# Optional env vars (see README):
+#   OLLAMA_HOST   default http://127.0.0.1:11434
+#   OLLAMA_MODEL  overrides --ollama-model
