@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "winter26"
+version = "0.1.0"
+description = "Self-contained translate → normalize → Tier1 → Tier2 lab standardization workflow"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["winter26*"]
