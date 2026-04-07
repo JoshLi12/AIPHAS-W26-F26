@@ -1,0 +1,17 @@
+.DS_Store
+Winter26/.venv/
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+
+# Winter26 pipeline outputs (new_data_output/: step1_translated.csv, step2_normalized.csv,
+# step3_tier1.csv, step4_tier2.csv, final_output.csv, translation_cache.json)
+Winter26/new_data_output/*.csv
+Winter26/new_data_output/translation_cache.json
+!Winter26/new_data_output/.gitkeep
+
+Winter26/new_data_output_smoke/*.csv
+Winter26/new_data_output_smoke/translation_cache.json
+
+Winter26/new_data_output_smoke2/*.csv
+Winter26/new_data_output_smoke2/translation_cache.json
