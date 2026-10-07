@@ -1,0 +1,5 @@
+# The pipeline uses the Python standard library only.
+# A local Ollama server is optional. Without it, --llm auto uses the offline model.
+#
+#   ollama serve
+#   ollama pull llama3.2

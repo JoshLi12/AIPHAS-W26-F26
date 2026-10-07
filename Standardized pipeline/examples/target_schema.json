@@ -1,0 +1,55 @@
+{
+  "name": "lab_observation",
+  "description": "One row from AIPHAS_raw_data_2026-2.csv. The same columns feed a dashboard and a model.",
+  "columns": [
+    {
+      "name": "record_id",
+      "role": "id",
+      "required": true,
+      "sources": ["_id", "id"]
+    },
+    {
+      "name": "ordercode",
+      "role": "id",
+      "required": true,
+      "sources": ["ordercode", "order code", "order_code"]
+    },
+    {
+      "name": "specimen",
+      "role": "categorical",
+      "required": true,
+      "sources": ["specimen", "sample", "spec"],
+      "vocabulary": ["urine", "blood", "serum", "plasma", "sputum", "pus", "csf", "wound", "stool"]
+    },
+    {
+      "name": "item",
+      "role": "text",
+      "required": false,
+      "sources": ["item", "test", "analyte"]
+    },
+    {
+      "name": "unit",
+      "role": "text",
+      "required": false,
+      "sources": ["unit", "units"]
+    },
+    {
+      "name": "hospital",
+      "role": "categorical",
+      "required": false,
+      "sources": ["hospital", "site"]
+    },
+    {
+      "name": "ref",
+      "role": "text",
+      "required": false,
+      "sources": ["ref", "reference"]
+    },
+    {
+      "name": "observed_on",
+      "role": "datetime",
+      "required": false,
+      "sources": ["Date", "date", "when", "observed_on"]
+    }
+  ]
+}

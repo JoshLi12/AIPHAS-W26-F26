@@ -1,0 +1,7 @@
+order code,Sample,Test,Units,Site,When,result note
+09100B,Urine,A2-Glo,%,1145010010,2024-10-08,within range
+09100C,urin,Albumin,percent,HOSP-A,10/08/2024,
+09100D,血,WBC,10^3/uL,Site 9,2024-11-01,check
+09100E,Serum,Glucose,mg/dL,Site 2,2024/13/40,bad date
+09100F,blood,glu,MG/DL,site2,2024-01-02,
+,unknown fluid,mystery test,???, , ,

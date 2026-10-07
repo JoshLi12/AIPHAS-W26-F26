@@ -1,0 +1,51 @@
+{
+  "name": "lab_observation",
+  "description": "Small demo contract used to show the confidence gate. The ingested lab extract uses target_schema.json.",
+  "columns": [
+    {
+      "name": "ordercode",
+      "role": "id",
+      "required": true,
+      "sources": ["ordercode", "order code", "order_code"]
+    },
+    {
+      "name": "specimen",
+      "role": "categorical",
+      "required": true,
+      "sources": ["specimen", "sample", "spec"],
+      "vocabulary": ["urine", "blood", "serum", "plasma"]
+    },
+    {
+      "name": "item",
+      "role": "categorical",
+      "required": true,
+      "sources": ["item", "test", "analyte"],
+      "vocabulary": ["a2-globulin", "albumin", "glucose", "wbc"]
+    },
+    {
+      "name": "unit",
+      "role": "categorical",
+      "required": true,
+      "sources": ["unit", "units"],
+      "vocabulary": ["%", "mg/dl", "10^3/ul"]
+    },
+    {
+      "name": "hospital",
+      "role": "categorical",
+      "required": false,
+      "sources": ["hospital", "site"]
+    },
+    {
+      "name": "observed_on",
+      "role": "datetime",
+      "required": false,
+      "sources": ["date", "when", "observed_on"]
+    },
+    {
+      "name": "note",
+      "role": "text",
+      "required": false,
+      "sources": ["note"]
+    }
+  ]
+}
